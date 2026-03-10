@@ -13,7 +13,7 @@ jobs:
       - name: Send Slack message
         uses: rtCamp/action-slack-notify@v2
         with:
-          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}   # your GitHub secret
+          webhook_url: ${{ secrets.SLACK_WEBHOOK }}
           message: |
             📌 New commit pushed to branch: ${{ github.ref_name }}
             Repository: ${{ github.repository }}
